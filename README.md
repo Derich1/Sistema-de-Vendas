@@ -1,7 +1,3 @@
-Aqui está um exemplo de um README para o seu sistema de vendas em Java:
-
----
-
 # Sistema de Vendas - Backend
 
 Este é o backend de um sistema de vendas desenvolvido em Java, utilizando Spring Boot, Hibernate, e MongoDB, com serviços separados em microsserviços e gerenciados em contêineres Docker. O projeto possui uma configuração de Swagger para visualização e teste dos endpoints.
