@@ -1,0 +1,36 @@
+server:
+  port: 8080  # Porta em que o serviço será executado
+  wait-time-in-ms-when-sync-empty: 3000  # Tempo de espera quando a sincronização está vazia
+
+spring:
+  profiles:
+    active: native  # Ativa o profile nativo
+  data:
+    mongodb:
+      uri: mongodb://${MONGODB_URL}/venda  # URL de conexão do MongoDB com o nome do banco de dados
+
+eureka:
+  instance:
+    hostname: ${DISCOVERY_HOST:localhost}  # Nome do host para o Eureka
+    port: 9091  # Porta do Eureka
+  client:
+    registerWithEureka: true  # Registra este serviço no Eureka
+    fetchRegistry: false  # Não busca o registro de outros serviços
+    serviceUrl:
+      defaultZone: http://${eureka.instance.hostname}:${eureka.instance.port}/eureka/  # URL padrão do Eureka
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"  # Expõe todos os endpoints de gerenciamento
+
+application-version: 1.0  # Versão da aplicação
+
+application:
+  produtoService:
+    url: http://produto-service:8080  # URL do serviço de produto
+    endpointConsultarProduto: ${application.produtoService.url}/produto  # Endpoint para consultar produto
+  clienteService:
+    url: http://cliente-service:8080  # URL do serviço de cliente
+    endpointConsultarCliente: ${application.clienteService.url}/cliente/isCadastrado/{id}  # Endpoint para verificar se cliente está cadastrado
