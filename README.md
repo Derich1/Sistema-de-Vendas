@@ -35,8 +35,13 @@ Cada serviço está empacotado em uma imagem Docker, o que permite o isolamento 
 
 Para visualizar e testar os endpoints, acesse o Swagger configurado em cada microsserviço. Em um navegador, vá para:
 
+### Vendas
 - [http://localhost:8083/swagger-ui/index.html](http://localhost:8083/swagger-ui/index.html#/)
+
+### Produtos
 - [http://localhost:8082/swagger-ui/index.html](http://localhost:8082/swagger-ui/index.html#/)
+
+### Clientes
 - [http://localhost:8081/swagger-ui/index.html](http://localhost:8081/swagger-ui/index.html#/)
 
 ## Estrutura de Arquivos
