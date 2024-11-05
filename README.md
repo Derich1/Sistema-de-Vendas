@@ -2,6 +2,8 @@
 
 Este é o backend de um sistema de vendas desenvolvido em Java, utilizando Spring Boot, Hibernate, e MongoDB, com serviços separados em microsserviços e gerenciados em contêineres Docker. O projeto possui uma configuração de Swagger para visualização e teste dos endpoints.
 
+Link do vídeo: https://youtu.be/E5HSkmwNVvY
+
 ## Tecnologias Utilizadas
 
 - **Java 11**: Linguagem de programação principal.
