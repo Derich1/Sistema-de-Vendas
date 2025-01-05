@@ -48,7 +48,7 @@ Para visualizar e testar os endpoints, acesse o Swagger configurado em cada micr
 - `produto-service/`: Código para o serviço de produtos.
 - `cliente-service/`: Código para o serviço de clientes.
 - `config-service/`: Código para a configuração dos microsserviços.
-- `service-discovery/`: Código para o configuração do servidor.
+- `service-discovery/`: Código para a descoberta dos microsserviços.
 - `docker-compose.yml`: Arquivo de configuração do Docker Compose para subir todos os serviços.
 
 ## Licença
